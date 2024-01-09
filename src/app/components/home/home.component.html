@@ -1,0 +1,87 @@
+<!-- gallery section start -->
+<div class="gallery_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="gallery_taital mb-4">Our best offers</h1>
+      </div>
+    </div>
+    <div class="">
+      <div style="margin-bottom: 10px" class="row">
+        <div class="col-md-3" *ngFor="let product of productList">
+          <div
+            class="gallery_box"
+            style="height: 570px; margin-bottom: 20px; position: relative"
+          >
+            <div class="gallery_img">
+              <img style="height: 200px" [src]="product.image" />
+            </div>
+            <h3 class="types_text">{{ product.title }}</h3>
+            <p class="looking_text">Start per day ${{ product.price }}</p>
+            <div
+              style="position: absolute; bottom: 20px; left: 55px"
+              class="read_bt"
+            >
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="gallery_box">
+            <div class="gallery_img">
+              <img src="./assets/images/img-2.png" />
+            </div>
+            <h3 class="types_text">Toyota car</h3>
+            <p class="looking_text">Start per day $4500</p>
+            <div class="read_bt"><a href="#">Book Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery_box">
+            <div class="gallery_img">
+              <img src="./assets/images/img-3.png" />
+            </div>
+            <h3 class="types_text">Toyota car</h3>
+            <p class="looking_text">Start per day $4500</p>
+            <div class="read_bt"><a href="#">Book Now</a></div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="gallery_section_2">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="gallery_box">
+            <div class="gallery_img">
+              <img src="./assets/images/img-1.png" />
+            </div>
+            <h3 class="types_text">Toyota car</h3>
+            <p class="looking_text">Start per day $4500</p>
+            <div class="read_bt"><a href="#">Book Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery_box">
+            <div class="gallery_img">
+              <img src="./assets/images/img-2.png" />
+            </div>
+            <h3 class="types_text">Toyota car</h3>
+            <p class="looking_text">Start per day $4500</p>
+            <div class="read_bt"><a href="#">Book Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery_box">
+            <div class="gallery_img">
+              <img src="./assets/images/img-3.png" />
+            </div>
+            <h3 class="types_text">Toyota car</h3>
+            <p class="looking_text">Start per day $4500</p>
+            <div class="read_bt"><a href="#">Book Now</a></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!-- gallery section end -->
